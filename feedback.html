@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback - Merciado Park</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/CSS/feedback.CSS">
+ 
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="indeex (1).html">
+                <img src="assets/images/logo final.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="indeex (1).html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about us.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Zone&attractions.html">Zone & Attractions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Resturant.html">Restaurant</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="feedback-section" data-aos="zoom-in">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Share Your Experience! 📝</h2>
+            </div>
+            <div class="feedback-form-container">
+                <p class="text-center mb-4">Your honest feedback helps us make Merciado Amusement Park even better for
+                    everyone. Please take a moment to fill out this form.</p>
+
+                <form class="needs-validation" novalidate>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="fullName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" required>
+                            <div class="invalid-feedback">
+                                Please enter your full name.
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" required>
+                            <div class="invalid-feedback">
+                                Please enter a valid email address.
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="visitDate" class="form-label">Date of Visit</label>
+                            <input type="date" class="form-control" id="visitDate" required>
+                            <div class="invalid-feedback">
+                                Please select your date of visit.
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label d-block">Overall Satisfaction</label>
+                            <div class="d-flex align-items-center">
+                                <span class="rating-label">Bad</span>
+                                <input type="range" class="form-range" min="1" max="5" step="1" id="ratingRange"
+                                    required>
+                                <span class="rating-label">Excellent</span>
+                            </div>
+                            <div class="invalid-feedback">
+                                Please provide a satisfaction rating.
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="category" class="form-label">Feedback Area</label>
+                            <select class="form-select" id="category" required>
+                                <option selected disabled value="">Choose...</option>
+                                <option value="rides">Rides & Attractions</option>
+                                <option value="food">Food & Beverage</option>
+                                <option value="staff">Staff & Service</option>
+                                <option value="cleanliness">Cleanliness & Facilities</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a feedback area.
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="comments" class="form-label">Detailed Comments</label>
+                            <textarea class="form-control" id="comments" rows="4"
+                                placeholder="Tell us what you loved or what we can improve..." required></textarea>
+                            <div class="invalid-feedback">
+                                Please provide your detailed comments (at least 20 characters).
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                    I agree that my feedback may be used for improvement purposes.
+                                </label>
+                                <div class="invalid-feedback">
+                                    You must agree before submitting.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 text-center mt-4">
+                            <button class="btn  btn-lg" type="submit">Submit Feedback</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="main-footer pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4 text-center text-md-start">
+                    <img src="assets/images/logo final.png" class="fimg" alt="Logo">
+                    <p class="tagline-text">Where Every Visit is an Adventure. Unleash your inner child and create
+                        unforgettable memories, one thrill ride at a time.</p>
+                </div>
+
+                <div class="col-6 col-md-3 mb-4">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-list">
+                        <li><a href="indeex (1).html" class="footer-link">Home</a></li>
+                        <li><a href="about us.html" class="footer-link">About Us</a></li>
+                        <li><a href="Zone&attractions.html" class="footer-link">Zone & Attractions</a></li>
+                        <li><a href="Resturant.html" class="footer-link">Restaurant</a></li>
+                        <li><a href="galery.html" class="footer-link">Gallery</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                        <li><a href="feedback.html" class="footer-link">Feedback</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-3 mb-4">
+                    <h5 class="footer-title">Services</h5>
+                    <ul class="footer-list">
+                        <li><a href="indoor.html" class="footer-link">Indoor Rides</a></li>
+                        <li><a href="outdoor.html" class="footer-link">Outdoor Rides</a></li>
+              
+                        <li><a href="events & paries.html" class="footer-link">Events & Parties</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mb-4 text-center text-md-start">
+                    <h5 class="footer-title">Contact Us</h5>
+                    <ul class="footer-list">
+                        <li><a href="#" class="footer-link">Address: DHA phase:2, Karachi</a></li>
+                        <li><a href="#" class="footer-link">Phone: 0319 4065254</a></li>
+                        <li><a href="#" class="footer-link">Email: info@Amusementpark.com</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row mt-4 pt-3 border-top">
+                <div class="col-12 text-center">
+                    <p class="copyright-text mb-0">&copy; <span id="year"></span> Merciado Amusement Park. All Rights
+                        Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+
+        (function () {
+            'use strict'
+
+
+            var forms = document.querySelectorAll('.needs-validation')
+
+
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+
+                        event.preventDefault();
+                        event.stopPropagation();
+
+                        if (form.checkValidity()) {
+
+                            alert('Thank You for your valuable feedback! We appreciate you taking the time to share your experience. 😊');
+
+                        } else {
+
+                            form.classList.add('was-validated');
+                        }
+
+                    }, false)
+                })
+        })()
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+.navbar {
+    background: aliceblue;
+    padding: 10px 0;
+    height: 80px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1050;
+}
+
+
+.navbar-brand img {
+    height: 110px;
+    width: auto;
+    max-height: 100px;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand img {
+        max-height: 50px;
+        width: auto;
+    }
+}
+
+
+.navbar-collapse {
+    background: aliceblue;
+    z-index: 1100;
+    position: relative;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.navbar-nav .nav-link {
+    color: #28375e !important;
+    position: relative;
+    overflow: hidden;
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: -2px;
+
+}
+
+.navbar-nav .nav-link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 0%;
+    height: 3px;
+    background-color: #298bdb;
+    transition: width 0.3s ease-out;
+    border-radius: 3px;
+}
+
+
+.navbar-nav .nav-link:hover::before,
+.navbar-nav .nav-link.active::before {
+    width: 100%;
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: 600;
+}
+
+
+.page-heading {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    color: #28375e;
+    font-size: 2.5rem;
+    font-family: Georgia, serif;
+    font-weight: bold;
+}
+
+.page-heading span {
+    border-bottom: 4px solid #298bdb;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+.card-text {
+    color: #28375e;
+    font-weight: 600;
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+
+.ride-card-img {
+    height: 220px;
+    object-fit: cover;
+
+}
+
+
+.main-footer {
+    background-color: aliceblue;
+    color: #28375e;
+    font-size: 16px;
+}
+
+.fimg {
+    width: 80%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.tagline-text {
+    font-size: 14px;
+    margin-top: -10px;
+    text-align: justify;
+}
+
+.footer-title {
+    color: #28375e;
+    font-weight: 600;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.footer-title::after {
+    content: '';
+    display: block;
+    width: 65px;
+    height: 3px;
+    background-color: #298bdb;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-link {
+    color: #28375e;
+    text-decoration: none;
+    transition: color 0.3s ease, 0.3s;
+}
+
+.footer-link:hover {
+    color: #298bdb;
+    padding-left: 6px;
+}
+
+.copyright-text {
+    color: rgba(40, 55, 94, 0.7);
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .footer-title {
+        margin-top: 20px;
+    }
+
+    .tagline-text {
+        text-align: center;
+    }
+
+    .main-footer .col-md-3 {
+        text-align: center;
+    }
+
+    .fimg {
+        margin: 0 auto;
+    }
+}

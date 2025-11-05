@@ -1,0 +1,218 @@
+.navbar {
+    background: aliceblue;
+    padding: 10px 0;
+    height: 80px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1050;
+}
+
+
+.navbar-brand img {
+    height: 110px;
+    width: auto;
+    max-height: 100px;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand img {
+        max-height: 50px;
+        width: auto;
+    }
+}
+
+
+.navbar-collapse {
+    background: aliceblue;
+    z-index: 1100;
+    position: relative;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.navbar-nav .nav-link {
+    color: #28375e !important;
+    position: relative;
+    overflow: hidden;
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: -2px;
+
+}
+
+.navbar-nav .nav-link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 0%;
+    height: 3px;
+    background-color: #298bdb;
+    transition: width 0.3s ease-out;
+    border-radius: 3px;
+}
+
+
+.navbar-nav .nav-link:hover::before,
+.navbar-nav .nav-link.active::before {
+    width: 100%;
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: 600;
+}
+
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets (1)/images (1)/Gemini_Generated_Image_ltvs2fltvs2fltvs (1).png');
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    border-bottom: 5px solid #298bdb;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: 30vh;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+}
+
+.section-heading {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    color: #28375e;
+    font-size: 2.5rem;
+    font-family: Georgia, serif;
+    font-weight: bold;
+}
+
+.section-heading span {
+    border-bottom: 4px solid #298bdb;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.zone-card {
+    text-align: center;
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.zone-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(41, 139, 219, 0.3);
+    background-color: aliceblue;
+}
+
+.zone-icon {
+    font-size: 3.5rem;
+    color: #298bdb;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.zone-card h4 {
+    color: #28375e;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.zone-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.zone-card .btn {
+    background-color: #28375e;
+    color: white;
+    border-radius: 50px;
+    padding: 8px 25px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.zone-card .btn:hover {
+    background-color: #298bdb;
+}
+
+
+.main-footer {
+    background-color: aliceblue;
+    color: #28375e;
+    font-size: 16px;
+}
+
+.fimg {
+    width: 80%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.tagline-text {
+    font-size: 14px;
+    margin-top: -10px;
+    text-align: justify;
+}
+
+.footer-title {
+    color: #28375e;
+    font-weight: 600;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.footer-title::after {
+    content: '';
+    display: block;
+    width: 65px;
+    height: 3px;
+    background-color: #298bdb;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-link {
+    color: #28375e;
+    text-decoration: none;
+    transition: color 0.3s ease, padding 0.3s;
+    display: block;
+    padding: 2px 0;
+}
+
+.footer-link:hover {
+    color: #298bdb;
+    padding-left: 6px;
+}
+
+.copyright-text {
+    color: rgba(40, 55, 94, 0.7);
+    font-size: 14px;
+}

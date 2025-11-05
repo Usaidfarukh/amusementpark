@@ -1,0 +1,232 @@
+.navbar {
+  background: aliceblue;
+  padding: 10px 0;
+  height: 80px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1050;
+}
+
+
+.navbar-brand img {
+  height: 110px;
+  width: auto;
+  max-height: 100px;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand img {
+    max-height: 50px;
+    width: auto;
+  }
+}
+
+
+.navbar-collapse {
+  background: aliceblue;
+  z-index: 1100;
+  position: relative;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+.navbar-nav .nav-link {
+  color: #28375e !important;
+  position: relative;
+  overflow: hidden;
+  font-size: 17px;
+  font-weight: 500;
+  margin-left: -2px;
+
+}
+
+.navbar-nav .nav-link::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  width: 0%;
+  height: 3px;
+  background-color: #298bdb;
+  transition: width 0.3s ease-out;
+  border-radius: 3px;
+}
+
+
+.navbar-nav .nav-link:hover::before,
+.navbar-nav .nav-link.active::before {
+  width: 100%;
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: 600;
+}
+
+  .zone {
+      margin-top: 10px;
+      text-align: center;
+      height: 70px;
+      background-color: #28375e;
+      color: aliceblue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+
+  .page-heading {
+      text-align: center;
+      margin-top: 60px;
+      color: #28375e;
+      font-size: 3rem;
+      font-family: Georgia, serif;
+      font-weight: bold;
+  }
+
+  .zone-heading {
+      text-align: center;
+      margin: 60px 0 30px;
+      color: #298bdb;
+      font-size: 2.2rem;
+      font-family: Georgia, serif;
+      font-weight: bold;
+  }
+
+  .underline {
+      border-bottom: 4px solid #28375e;
+      display: inline-block;
+      padding-bottom: 5px;
+  }
+
+  .zone-highlight {
+      border-bottom: 4px solid #298bdb;
+  }
+
+
+
+  .attraction-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 10px;
+      overflow: hidden;
+      height: 100%;
+  }
+
+  .attraction-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  .attraction-card img {
+      height: 250px;
+      object-fit: cover;
+      width: 100%;
+  }
+
+  .card-body h5 {
+      color: #28375e;
+      font-weight: 700;
+      font-family: Georgia, serif;
+  }
+
+  .card-body p {
+      font-size: 0.95rem;
+      color: #555;
+  }
+
+
+  .ticket-button-link {
+      text-decoration: none;
+  }
+
+  .ticket-button-link button {
+      background-color: #28375e;
+      color: white;
+      padding: 10px 30px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      border: none;
+      cursor: pointer;
+  }
+
+  .ticket-button-link button:hover {
+      background-color: #298bdb;
+  }
+
+
+
+  .main-footer {
+      background-color: aliceblue;
+      color: #28375e;
+      font-size: 16px;
+      margin-top: 80px;
+  }
+
+  .fimg {
+      width: 80%;
+      height: auto;
+      margin-bottom: 15px;
+  }
+
+  .tagline-text {
+      font-size: 14px;
+      margin-top: -10px;
+      text-align: justify;
+  }
+
+  .footer-title {
+      color: #28375e;
+      font-weight: 600;
+      margin-bottom: 15px;
+      position: relative;
+  }
+
+  .footer-title::after {
+      content: '';
+      display: block;
+      width: 65px;
+      height: 3px;
+      background-color: #298bdb;
+      border-radius: 3px;
+      margin-top: 5px;
+  }
+
+  .footer-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  }
+
+  .footer-link {
+      color: #28375e;
+      text-decoration: none;
+      transition: color 0.3s ease, 0.3s;
+  }
+
+  .footer-link:hover {
+      color: #298bdb;
+      padding-left: 6px;
+  }
+
+  .copyright-text {
+      color: rgba(40, 55, 94, 0.7);
+      font-size: 14px;
+  }
+
+  @media (max-width: 768px) {
+      .footer-title {
+          margin-top: 20px;
+      }
+
+      .tagline-text {
+          text-align: center;
+      }
+
+      .main-footer .col-md-3 {
+          text-align: center;
+      }
+
+      .fimg {
+          margin: 0 auto;
+      }
+  }

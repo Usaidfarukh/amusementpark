@@ -1,0 +1,275 @@
+  body {
+      overflow-x: hidden;
+  }
+
+.navbar {
+  background: aliceblue;
+  padding: 10px 0;
+  height: 80px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1050;
+}
+
+
+.navbar-brand img {
+  height: 110px;
+  width: auto;
+  max-height: 100px;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand img {
+    max-height: 50px;
+    width: auto;
+  }
+}
+
+
+.navbar-collapse {
+  background: aliceblue;
+  z-index: 1100;
+  position: relative;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+.navbar-nav .nav-link {
+  color: #28375e !important;
+  position: relative;
+  overflow: hidden;
+  font-size: 17px;
+  font-weight: 500;
+  margin-left: -2px;
+
+}
+
+.navbar-nav .nav-link::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  width: 0%;
+  height: 3px;
+  background-color: #298bdb;
+  transition: width 0.3s ease-out;
+  border-radius: 3px;
+}
+
+
+.navbar-nav .nav-link:hover::before,
+.navbar-nav .nav-link.active::before {
+  width: 100%;
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: 600;
+}
+
+
+
+  .about h3 {
+
+      margin-top: 10px;
+      text-align: center;
+      height: 70px;
+      background-color: #28375e;
+      color: aliceblue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+
+  @media (max-width: 768px) {
+      .custom-carousel-height {
+          height: 55vh;
+      }
+  }
+
+
+  .ride,
+  .facality {
+      text-align: center;
+      margin-top: 60px;
+      color: #28375e;
+      font-size: 2.5rem;
+      font-family: Georgia, serif;
+      font-weight: bold;
+  }
+
+  #p,
+  #f {
+      border-bottom: 4px solid #298bdb;
+      display: inline-block;
+      padding-bottom: 5px;
+  }
+
+  #f {
+      text-align: center;
+      margin-left: 588px;
+      color: #28375e;
+      font-size: 2.5rem;
+      font-family: Georgia, serif;
+      font-weight: bold;
+  }
+
+
+  .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 10px;
+  }
+
+  .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+      z-index: 10;
+  }
+
+  .card-text {
+      text-align: center;
+      color: #28375e;
+      font-weight: 600;
+      font-family: Georgia, serif;
+  }
+
+
+  .button {
+      text-align: center;
+      margin: 30px 0 60px;
+  }
+
+  .button button {
+      background-color: #28375e;
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+  }
+
+  .button button:hover {
+      background-color: #298bdb;
+  }
+
+
+  #faciliy {
+      border-radius: 15px;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+      width: 90%;
+      height: auto;
+      margin: 30px auto;
+      display: block;
+  }
+
+
+
+
+  .main-footer {
+      background-color: aliceblue;
+      color: #28375e;
+      font-size: 16px;
+  }
+
+  .fimg {
+      width: 80%;
+      height: auto;
+      margin-bottom: 15px;
+  }
+
+  .tagline-text {
+      font-size: 14px;
+      margin-top: -10px;
+      text-align: justify;
+  }
+
+  .footer-title {
+      color: #28375e;
+      font-weight: 600;
+      margin-bottom: 15px;
+      position: relative;
+  }
+
+  .footer-title::after {
+      content: '';
+      display: block;
+      width: 65px;
+      height: 3px;
+      background-color: #298bdb;
+      border-radius: 3px;
+      margin-top: 5px;
+  }
+
+  .footer-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  }
+
+  .footer-link {
+      color: #28375e;
+      text-decoration: none;
+      transition: color 0.3s ease, 0.3s;
+  }
+
+  .footer-link:hover {
+      color: #298bdb;
+      padding-left: 6px;
+  }
+
+  .copyright-text {
+      color: rgba(40, 55, 94, 0.7);
+      font-size: 14px;
+  }
+
+  .disclaimer-section {
+      background-color: #f0f0f0;
+      padding-top: 20px;
+      padding-bottom: 20px;
+  }
+
+
+  .disclaimer-box {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-left: 5px solid #298bdb;
+
+  }
+
+  .disclaimer-title {
+      color: #298bdb;
+      margin-bottom: 8px;
+      font-size: 1.15rem;
+  }
+
+  .disclaimer-text {
+      color: #555;
+      font-size: 0.9rem;
+      line-height: 1.4;
+  }
+
+
+  .main-footer {
+      margin-top: 0;
+  }
+
+  @media (max-width: 768px) {
+      .footer-title {
+          margin-top: 20px;
+      }
+
+      .tagline-text {
+          text-align: center;
+      }
+
+      .main-footer .col-md-3 {
+          text-align: center;
+      }
+
+      .fimg {
+          margin: 0 auto;
+      }
+  }
